@@ -1,0 +1,9 @@
+<div style="margin: auto; width: 50%; padding: 10px;">
+  <h1>Submit Badget</h1>
+  <%= form_with do |f| %>
+    <p>Badget Issue Date<br><%= f.date_field 'Badget Issue Date' %></p>
+    <p>Badget Recipient Name<br><%= f.text_field 'Badget Recipient Name' %></p>
+    <p>Badget UUID<br><%= f.text_field 'Badget UUID' %></p>
+    <%= f.submit "Submit to Chainpoint" %>
+  <% end %>
+</div>
