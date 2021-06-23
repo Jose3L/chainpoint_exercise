@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
+  get '/submit', to: 'submit#index'
+  post '/submit', to: 'submit#create'
+  get '/success', to: 'success#index'
 end
